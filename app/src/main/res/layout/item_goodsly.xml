@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:background="#fff"
+   >
+
+    <ImageView
+        android:paddingLeft="10dp"
+        android:id="@+id/img_goods"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/goods" />
+
+    <TextView
+        android:paddingRight="10dp"
+        android:id="@+id/tv_context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img_goods"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="买商品，卖商品，买卖商品,绝对的好商品，快来买咯。"
+        android:textColor="@color/textMain"
+        android:textSize="15sp" />
+
+    <TextView
+        android:paddingRight="10dp"
+        android:id="@+id/tv_mark"
+         android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_context"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img_goods"
+        android:text="不让中间商挣差价，还你血汗钱"
+        android:textColor="#666666" />
+
+
+    <TextView
+        android:paddingRight="10dp"
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mark"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img_goods"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="￥666.666"
+        android:textColor="#E32762"
+        android:textSize="18sp" />
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/img_goods"
+        android:background="#eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</RelativeLayout>

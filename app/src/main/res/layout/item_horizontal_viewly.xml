@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:padding="10px"
+    android:background="@color/colorWrite"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:adjustViewBounds="true"
+        android:background="@drawable/goods"
+        />
+    <TextView
+        android:layout_marginTop="10px"
+        android:textColor="@color/textMain"
+        android:textSize="26px"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="米其林厨师"
+        />
+      <TextView
+          android:textSize="30px"
+          android:textColor="@color/colorRed"
+          android:textStyle="bold"
+          android:gravity="center"
+          android:id="@+id/tv_price"
+          android:layout_marginTop="20px"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="￥20.23"
+          />
+</LinearLayout>

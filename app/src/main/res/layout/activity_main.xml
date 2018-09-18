@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ruiwenliu.HorizontalView.view.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刷新数据"
+            android:textSize="26px"
+            />
+        <TextView
+            android:textSize="25px"
+            android:layout_marginLeft="15px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HorizontalScrollview自适应"
+            />
+    </RelativeLayout>
+
+    <com.ruiwenliu.Horizontallibrary.HorizontalScrollview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:id="@+id/horizontal_refresh"
+        />
+   <TextView
+       android:textSize="25px"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20px"
+       android:text="设置自适应menu的下划线"
+       />
+    <com.ruiwenliu.Horizontallibrary.HorizontalScrollview
+        android:layout_width="match_parent"
+        android:layout_marginTop="15px"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontal_line"
+        android:background="@color/colorWrite"
+        />
+
+
+    <TextView
+        android:textSize="25px"
+        android:layout_marginTop="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="带背景图的菜单"
+        />
+    <com.ruiwenliu.Horizontallibrary.HorizontalScrollview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15px"
+        android:id="@+id/horizontal_bg"
+        android:background="@color/colorWrite"
+        />
+
+    <TextView
+        android:textSize="25px"
+        android:layout_marginTop="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="横向滚动的menu"
+        />
+    <com.ruiwenliu.Horizontallibrary.HorizontalScrollview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15px"
+        android:id="@+id/horizontal_scroll"
+        android:background="@color/colorWrite"
+        />
+
+
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+         <Button
+             android:text="ViewPager联动"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/tv_viewpager"
+             />
+        <Button
+            android:text="横向滚动列表"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_horizontal_list"
+            />
+    </LinearLayout>
+
+</LinearLayout>
