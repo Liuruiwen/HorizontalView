@@ -50,6 +50,7 @@ public class ViewPagerActivity extends AutoLayoutActivity {
                 TextView tvTime=helper.getView(R.id.tv_time);
                 tvName.setText( item.menuName);
                 tvTime.setText(item.menuTime);
+                //getSelectPostion()  代表你选中的Item
                 tvName.setTextColor(ContextCompat.getColor(mContext,position==getSelectPostion()? R.color.colorRed:R.color.textMain));
                 tvTime.setTextColor(ContextCompat.getColor(mContext,position==getSelectPostion()? R.color.colorRed:R.color.textMain));
                 helper.setVisible(R.id.view_line,position==getSelectPostion()?true:false);

@@ -66,32 +66,32 @@ public class MainActivity extends AutoLayoutActivity implements OnItemClickListe
 
             @Override
             public int getVewHeight() {
-                return 80;
+                return 80;//设置菜单栏的高度
             }
 
             @Override
             public boolean isAdjustModel() {
-                return true;
+                return true;//是否自适应
             }
 
             @Override
             public int getSelectBgRes() {
-                return R.drawable.shape_bg_red;
+                return R.drawable.shape_bg_red;//设置选中item的背景
             }
 
             @Override
             public int getNotSelectBgRes() {
-                return 0;
+                return 0;//设置未选中item的背景
             }
 
             @Override
             public int getSelectTextColor() {
-                return R.color.colorWrite;
+                return R.color.colorWrite;//设置选中item 字体颜色
             }
 
             @Override
             public int getNotSelectTextColor() {
-                return R.color.textMain;
+                return R.color.textMain;//设置未选中item 字体颜色
             }
 
             @Override
