@@ -89,16 +89,18 @@ public abstract class BaseRecyclerviewAdapter<D, T extends RecylcerViewHolder> e
             return;
         }
 
-        if (mOnItemClick != null) {
+
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     setSelect(viewHolder.getLayoutPosition());
-                    mOnItemClick.onItemClick(BaseRecyclerviewAdapter.this, v, viewHolder.getLayoutPosition());
+                    if (mOnItemClick != null) {
+                        mOnItemClick.onItemClick(BaseRecyclerviewAdapter.this, v, viewHolder.getLayoutPosition());
+                    }
 
                 }
             });
-        }
+
 
     }
 

@@ -1,6 +1,10 @@
 package com.ruiwenliu.Horizontallibrary.adapter;
 
 import android.support.v4.content.ContextCompat;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.AbsoluteSizeSpan;
+import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -36,8 +40,9 @@ public class HorizontalAdapter extends BaseRecyclerviewAdapter<ItemValue, Recylc
         ImageView ivLine = helper.getView(R.id.view_line);
         LinearLayout layout = helper.getView(R.id.lay_item);
         TextView tvContext = helper.getView(R.id.tv_name);
-        setAttribute(layout, tvContext, ivLine, position);
         tvContext.setText(item.getItemValue());
+        setAttribute(layout, tvContext, ivLine, position);
+
     }
 
 
@@ -95,9 +100,10 @@ public class HorizontalAdapter extends BaseRecyclerviewAdapter<ItemValue, Recylc
      * @param position
      */
     public void setItemAttribute(TextView tvContext, int position) {
-        tvContext.setTextSize(AutoUtils.getPercentWidthSize(attribute.getTextSize() > 0 ? attribute.getTextSize() : 28));
+        tvContext.setTextSize(TypedValue.COMPLEX_UNIT_PX,attribute.getTextSize() > 0 ? attribute.getTextSize() : 28);
         tvContext.setHeight(AutoUtils.getPercentWidthSize(attribute.getItemHeight() > 0 ? attribute.getItemHeight() : 30));
         tvContext.setTextColor(ContextCompat.getColor(mContext, getSelectPostion() == position ? attribute.getSelectTextColor() != 0 ? attribute.getSelectTextColor() : R.color.colorRed : attribute.getNotSelectTextColor() != 0 ? attribute.getNotSelectTextColor() : R.color.textMain));
+        AutoUtils.autoTextSize(tvContext);
     }
 
     /**
@@ -126,5 +132,7 @@ public class HorizontalAdapter extends BaseRecyclerviewAdapter<ItemValue, Recylc
                 break;
         }
     }
+
+
 
 }

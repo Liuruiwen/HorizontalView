@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
+    <TextView
+        android:textColor="@color/textMain"
+        android:textSize="28px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="瑞文"
+        />
     <com.ruiwenliu.Horizontallibrary.HorizontalScrollview
         android:layout_width="match_parent"
         android:id="@+id/horizontal_scrollview"
         android:layout_height="wrap_content"/>
-</FrameLayout>
+</LinearLayout>

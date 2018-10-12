@@ -11,6 +11,7 @@ import com.ruiwenliu.HorizontalView.bean.HorizontalBean;
 import com.ruiwenliu.Horizontallibrary.HorizontalScrollview;
 import com.ruiwenliu.Horizontallibrary.adapter.BaseRecyclerviewAdapter;
 import com.ruiwenliu.Horizontallibrary.adapter.RecylcerViewHolder;
+import com.zhy.autolayout.AutoLayoutActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +19,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class HorizontalListActivity extends AppCompatActivity {
+public class HorizontalListActivity extends AutoLayoutActivity {
 
     @BindView(R.id.horizontal_scrollview)
     HorizontalScrollview horizontalScrollview;

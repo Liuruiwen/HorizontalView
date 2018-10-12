@@ -16,7 +16,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:textColor="@color/textMain"
-        android:textSize="28px" />
+        />
 
     <ImageView
         android:visibility="gone"

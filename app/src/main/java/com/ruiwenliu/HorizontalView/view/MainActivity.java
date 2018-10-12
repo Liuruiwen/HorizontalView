@@ -18,7 +18,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivity extends AutoLayoutActivity implements OnItemClickListener {
+public class MainActivity extends AutoLayoutActivity {
 
 
     @BindView(R.id.horizontal_refresh)
@@ -48,8 +48,13 @@ public class MainActivity extends AutoLayoutActivity implements OnItemClickListe
             }
 
             @Override
+            public int getTextSize() {
+                return 40;
+            }
+
+            @Override
             public int getBottomWidth() {
-                return 100;
+                return 160;
             }
         });
 
@@ -84,6 +89,8 @@ public class MainActivity extends AutoLayoutActivity implements OnItemClickListe
                 return 0;//设置未选中item的背景
             }
 
+
+
             @Override
             public int getSelectTextColor() {
                 return R.color.colorWrite;//设置选中item 字体颜色
@@ -108,10 +115,6 @@ public class MainActivity extends AutoLayoutActivity implements OnItemClickListe
             }
         });
 
-        horizontalRefresh.setOnItemClickListerter(this);
-        horizontalLine.setOnItemClickListerter(this);
-        horizontalBg.setOnItemClickListerter(this);
-        horizontalScroll.setOnItemClickListerter(this);
     }
 
 
@@ -140,7 +143,7 @@ public class MainActivity extends AutoLayoutActivity implements OnItemClickListe
         List<HorizontalBean> list = new ArrayList<>();
         for (int i = 0; i < 15; i++) {
             HorizontalBean bean = new HorizontalBean();
-            bean.title = "小瑞文" + i;
+            bean.title = "呼啦啦" + i;
             list.add(bean);
         }
         return list;
@@ -162,8 +165,5 @@ public class MainActivity extends AutoLayoutActivity implements OnItemClickListe
         }
     }
 
-    @Override
-    public void onItemClick(BaseRecyclerviewAdapter adapter, View view, int position) {
 
-    }
 }
