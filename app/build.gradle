@@ -27,9 +27,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     testImplementation 'junit:junit:4.12'
     compile 'com.jakewharton:butterknife:8.4.0'
-    implementation 'com.android.support:appcompat-v7:26.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
-    implementation 'com.android.support:recyclerview-v7:26.1.0'
-//    implementation 'com.github.Liuruiwen:HorizontalView:1.0.1'
-    implementation project(':horizontallibrary')
+    implementation 'com.github.Liuruiwen:HorizontalView:1.0.2'
+//    implementation project(':horizontallibrary')
 }
